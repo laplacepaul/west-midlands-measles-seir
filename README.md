@@ -4,7 +4,7 @@
 
 **Paul Adeyemi** · Retrospective mathematical epidemiology study · UK Health Security Agency surveillance data · November 2026
 
-This study assesses whether a simple SEIR compartmental model can describe the 2023–2024 West Midlands measles outbreak. It compares a constant-transmission baseline with a piecewise-constant transmission model (the same SEIR equations with one change in $\beta(t)$) fitted to **26 consecutive observed onset weeks (6 November 2023–29 April 2024)**. The analysis examines early growth, the invasion threshold, model adequacy, structural and practical identifiability (profile likelihood, independently verified), the epidemic mechanism each model uses, and sensitivity to compartment timings.
+This study assesses whether a simple SEIR compartmental model can describe the 2023–2024 West Midlands measles outbreak. It compares a constant-transmission baseline with a piecewise-constant transmission model (the same SEIR equations with one change in β(t)) fitted to **26 consecutive observed onset weeks (6 November 2023–29 April 2024)**. The analysis examines early growth, the invasion threshold, model adequacy, structural and practical identifiability (profile likelihood, independently verified), the epidemic mechanism each model uses, and sensitivity to compartment timings.
 
 **[Read the research report (PDF)](report/west_midlands_measles_research_report.pdf)** · [Editable manuscript](report/west_midlands_measles_research_report.md)
 
