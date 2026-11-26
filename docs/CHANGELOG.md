@@ -11,6 +11,7 @@
 - **New `analysis/06_mechanism_analysis.py`** and figure `mechanism_depletion_vs_transmission.png`: depletion vs transmission-change interpretation, model R_eff(t), early-growth consistency.
 - **Script 02**: corrected multistart (24/48 starts); constant-model RMSE range now 10.50–10.64; change-point results unchanged.
 - **Manuscript revised**: retitled; abstract, Sections 4, 4.2, 5.2 (quasi-likelihood column, change-time profile moved here, accurate verification description), new 5.3 (mechanism), 5.4 (updated timing results), 5.5 and Conclusion. Deviance/AIC updated to the corrected Script 01 fit (27.11 / 158.43). PDF regenerated.
+- **Archived on Zenodo**: v1.0.0, DOI [10.5281/zenodo.24560052](https://doi.org/10.5281/zenodo.24560052); DOI added to README and `CITATION.cff`.
 - **Repository**: added `LICENSE` (MIT for code; CC BY 4.0 for report and figures; OGL for data), `CITATION.cff`, author and citation details; generated outputs in `analysis/` are now git-ignored.
 - **New `PROFILE_LIKELIHOOD_FINDINGS.md`**: summary of the identifiability results, the verification and the release decision.
 - **`docs/DATA_SOURCES.md`**: added Open Government Licence v3.0 attribution for the UKHSA data.

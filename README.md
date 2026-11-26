@@ -1,5 +1,7 @@
 # Change-point transmission and parameter identifiability in an SEIR model of the 2023–2024 West Midlands measles outbreak
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24560052.svg)](https://doi.org/10.5281/zenodo.24560052)
+
 **Paul Adeyemi** · Retrospective mathematical epidemiology study · UK Health Security Agency surveillance data · November 2026
 
 This study assesses whether a simple SEIR compartmental model can describe the 2023–2024 West Midlands measles outbreak. It compares a constant-transmission baseline with a piecewise-constant transmission model (the same SEIR equations with one change in $\beta(t)$) fitted to **26 consecutive observed onset weeks (6 November 2023–29 April 2024)**. The analysis examines early growth, the invasion threshold, model adequacy, structural and practical identifiability (profile likelihood, independently verified), the epidemic mechanism each model uses, and sensitivity to compartment timings.
@@ -60,7 +62,7 @@ UKHSA data are observed laboratory-confirmed onset-week counts. Model curves are
 
 If you use this work, please cite it as below (also available via GitHub's *Cite this repository* button, generated from `CITATION.cff`):
 
-> Adeyemi, P. (2026). *Change-point transmission and parameter identifiability in an SEIR model of the 2023–2024 West Midlands measles outbreak* [Research report and code]. GitHub. https://github.com/laplacepaul/west-midlands-measles-seir
+> Adeyemi, P. (2026). *Change-point transmission and parameter identifiability in an SEIR model of the 2023–2024 West Midlands measles outbreak* (Version 1.0.0) [Research report and code]. Zenodo. https://doi.org/10.5281/zenodo.24560052
 
 ## Licence
 
