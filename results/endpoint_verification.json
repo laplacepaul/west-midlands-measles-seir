@@ -1,0 +1,222 @@
+{
+  "purpose": "Independent cold-start verification of Script 03 interval endpoints",
+  "seed": 20271,
+  "random_starts_per_point": 80,
+  "start_design": "Latin hypercube over full log search box",
+  "lr_threshold_nll": 1.920729410347062,
+  "offsets": {
+    "log_scale": 0.005,
+    "change_time_days": 0.25
+  },
+  "reference_minima": {
+    "Model A": {
+      "recomputed": 116.62147329247959,
+      "script03": 116.6214734966243,
+      "difference": -2.0414471180174587e-07,
+      "pass": true
+    },
+    "Model B, change fixed at 1 Jan (day 56)": {
+      "recomputed": 75.21405459128209,
+      "script03": 75.21449203196275,
+      "difference": -0.0004374406806562092,
+      "pass": true
+    },
+    "Model B, change time free": {
+      "recomputed": 74.83679698707111,
+      "script03": 74.86069583848501,
+      "difference": -0.0238988514139038,
+      "pass": false
+    }
+  },
+  "change_time_reference_scan": [
+    {
+      "change_day": 52.0,
+      "nll": 74.88611641885498,
+      "n_at_best": 4
+    },
+    {
+      "change_day": 53.0,
+      "nll": 74.83679698707111,
+      "n_at_best": 11
+    },
+    {
+      "change_day": 54.0,
+      "nll": 74.86069570851957,
+      "n_at_best": 4
+    },
+    {
+      "change_day": 55.0,
+      "nll": 74.9725844266788,
+      "n_at_best": 8
+    },
+    {
+      "change_day": 56.0,
+      "nll": 75.21449202798127,
+      "n_at_best": 17
+    }
+  ],
+  "change_time_refined_minimum": {
+    "change_day": 53.18432568930047,
+    "nll": 74.83559407007779,
+    "date": "2023-12-29 04:25:25.739555561"
+  },
+  "model_B_Q_open_end": [
+    {
+      "Q": 10000000.000000006,
+      "delta_nll": 0.00043744699556214073,
+      "below_threshold": true,
+      "n_at_best": 52,
+      "n_starts": 80
+    },
+    {
+      "Q": "infinity",
+      "delta_nll": 0.0,
+      "below_threshold": true,
+      "n_at_best": 63,
+      "n_starts": 80
+    }
+  ],
+  "endpoints": [
+    {
+      "profile": "A: Q",
+      "side": "lower",
+      "reported": 827.868380858508,
+      "recomputed": 827.9561081545462,
+      "delta_at_reported": 1.9201894935369666,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 26
+    },
+    {
+      "profile": "A: Q",
+      "side": "upper",
+      "reported": 1044.0919854107733,
+      "recomputed": 1044.010209250329,
+      "delta_at_reported": 1.920591525802493,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 34
+    },
+    {
+      "profile": "A: beta0",
+      "side": "lower",
+      "reported": 0.22114008560996437,
+      "recomputed": 0.2211782097018749,
+      "delta_at_reported": 1.9207540096701337,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 52
+    },
+    {
+      "profile": "A: beta0",
+      "side": "upper",
+      "reported": 0.2505600723570152,
+      "recomputed": 0.25050218803068874,
+      "delta_at_reported": 1.9213831405942017,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 43
+    },
+    {
+      "profile": "B: Q",
+      "side": "lower",
+      "reported": 3304.0198041234175,
+      "recomputed": 3304.657929821717,
+      "delta_at_reported": 1.921190107512615,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 45
+    },
+    {
+      "profile": "B: beta_before",
+      "side": "lower",
+      "reported": 0.28570547216636666,
+      "recomputed": 0.2857380800979378,
+      "delta_at_reported": 1.9207977093670934,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 9
+    },
+    {
+      "profile": "B: beta_before",
+      "side": "upper",
+      "reported": 0.3593735632048611,
+      "recomputed": 0.35933298077791226,
+      "delta_at_reported": 1.9209891568504815,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 5
+    },
+    {
+      "profile": "B: beta_after",
+      "side": "lower",
+      "reported": 0.10670023690361885,
+      "recomputed": 0.10672873309515324,
+      "delta_at_reported": 1.922361793663896,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 7
+    },
+    {
+      "profile": "B: beta_after",
+      "side": "upper",
+      "reported": 0.130031050419449,
+      "recomputed": 0.13002217814739989,
+      "delta_at_reported": 1.9211148701299408,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 11
+    },
+    {
+      "profile": "B: change time",
+      "side": "lower",
+      "reported": 47.67925547005081,
+      "recomputed": 47.712156876637565,
+      "delta_at_reported": 1.9455482168713445,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 9,
+      "recomputed_vs_refined_minimum": 47.713364588221594,
+      "date_vs_refined_minimum": "2023-12-23 17:07:14.700422345"
+    },
+    {
+      "profile": "B: change time",
+      "side": "upper",
+      "reported": 58.231884934119954,
+      "recomputed": 58.20072391117928,
+      "delta_at_reported": 1.9449784177863023,
+      "threshold": 1.920729410347062,
+      "crossing_bracketed": true,
+      "within_tolerance": true,
+      "pass_": true,
+      "min_starts_agreeing": 9,
+      "recomputed_vs_refined_minimum": 58.199525831667174,
+      "date_vs_refined_minimum": "2024-01-03 04:47:19.031856043"
+    }
+  ],
+  "endpoints_pass": true,
+  "reference_minima_pass": false,
+  "open_end_pass": true,
+  "all_checks_pass": false,
+  "runtime_seconds": 2173.721740245819
+}

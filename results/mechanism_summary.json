@@ -1,0 +1,128 @@
+{
+  "note": "All quantities conditional on sigma = 0.1/day, gamma = 1/7/day, the sigma*E onset proxy, a closed homogeneous population and the Poisson likelihood. Q is the detected pool (rho*M).",
+  "observed_cases_in_window": 600.0,
+  "fits": {
+    "Model A (constant beta)": {
+      "nll": 116.6214734966243,
+      "beta_before": 0.2358456029807099,
+      "beta_after": 0.2358456029807099,
+      "Q": 925.0691262228762,
+      "fraction_of_detected_pool_infected_by_end": 0.6637631683157958,
+      "R_eff_start": 1.6190221414328236,
+      "R_eff_end": 0.5550998481901921,
+      "predicted_cases_in_window": 599.9994832132893,
+      "implied_initial_growth_rate_per_day": 0.03215551436232035,
+      "implied_doubling_days": 21.55609058992915,
+      "R_eff_crosses_1_on": "2024-01-29",
+      "predicted_peak_week": "2024-01-22"
+    },
+    "Model B, Q -> infinity (no depletion)": {
+      "nll": 75.21405462663445,
+      "beta_before": 0.3201241582749709,
+      "beta_after": 0.11184564493951898,
+      "Q": null,
+      "fraction_of_detected_pool_infected_by_end": 0.0,
+      "R_eff_start": 2.2408691079247967,
+      "R_eff_end": 0.7829195145766329,
+      "predicted_cases_in_window": 599.9991043339049,
+      "implied_initial_growth_rate_per_day": 0.058770206316912973,
+      "implied_doubling_days": 11.794193418723296,
+      "R_eff_just_before_change": 2.2408691079247967,
+      "R_eff_just_after_change": 0.7829195145766329
+    },
+    "Model B, Q at lower 95% end (3,304)": {
+      "nll": 77.13524485421559,
+      "beta_before": 0.3241016137756596,
+      "beta_after": 0.12948944621560124,
+      "Q": 3304.0198041234175,
+      "fraction_of_detected_pool_infected_by_end": 0.1849291190863528,
+      "R_eff_start": 2.2654131118748757,
+      "R_eff_end": 0.7388015389717931,
+      "predicted_cases_in_window": 597.3144234354178,
+      "implied_initial_growth_rate_per_day": 0.05974048809546749,
+      "implied_doubling_days": 11.602636715191725,
+      "R_eff_just_before_change": 2.116812480032032,
+      "R_eff_just_after_change": 0.8457374605093894
+    }
+  },
+  "model_B_fits_max_weekly_difference_cases": 2.1044450636587726,
+  "model_B_R_eff_profile_ranges": {
+    "definition": "beta/gamma with S/Q = 1 (the Model B profile solutions have Q at the 10^7 bound or larger)",
+    "before_change": {
+      "estimate": 2.2408799798171906,
+      "range_95_LR": [
+        1.9999383051645667,
+        2.5156149424340275
+      ]
+    },
+    "after_change": {
+      "estimate": 0.7829550300632319,
+      "range_95_LR": [
+        0.746901658325332,
+        0.9102173529361431
+      ]
+    },
+    "ratio_after_over_before": 0.34939623590510405
+  },
+  "early_growth_consistency": {
+    "descriptive_windows": [
+      {
+        "window": "W1",
+        "start": "2023-11-06",
+        "end": "2023-12-18",
+        "r_day": 0.0720283357390955,
+        "ci": [
+          0.0588482186808153,
+          0.0852084527973757
+        ],
+        "doubling_days": 9.623256923090596
+      },
+      {
+        "window": "W2",
+        "start": "2023-11-13",
+        "end": "2023-12-25",
+        "r_day": 0.06549507599281,
+        "ci": [
+          0.055237807797378,
+          0.0757523441882419
+        ],
+        "doubling_days": 10.583195302132918
+      },
+      {
+        "window": "W3",
+        "start": "2023-11-20",
+        "end": "2024-01-01",
+        "r_day": 0.0560764434939549,
+        "ci": [
+          0.0476620016612531,
+          0.0644908853266567
+        ],
+        "doubling_days": 12.360755022466194
+      },
+      {
+        "window": "W4",
+        "start": "2023-11-27",
+        "end": "2024-01-01",
+        "r_day": 0.0548679909711068,
+        "ci": [
+          0.0438154046673988,
+          0.0659205772748148
+        ],
+        "doubling_days": 12.632997277501063
+      }
+    ],
+    "model_A_implied_r_from_beta0_profile_range": [
+      0.028815204597145608,
+      0.038306180298067274
+    ],
+    "model_A_implied_r_at_mle": 0.03363188120697448,
+    "model_B_implied_r_from_beta_before_profile_range": [
+      0.04895256276798819,
+      0.06935020095964657
+    ],
+    "model_B_implied_r_at_mle": 0.058770637264793715,
+    "model_A_range_overlaps_any_window_ci": false,
+    "model_B_range_overlaps_every_window_ci": true,
+    "caveat": "Growth windows use the same observations and were chosen retrospectively; internal consistency only."
+  }
+}

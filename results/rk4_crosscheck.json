@@ -1,0 +1,191 @@
+{
+  "purpose": "Independent RK4 + Nelder-Mead re-implementation check of profile endpoints",
+  "rk4_step_days": 0.1,
+  "optimiser": "Nelder-Mead (adaptive) with restart; nearest Script 03 point + 4 LHS starts (seed 777)",
+  "tolerance": "endpoint shift <= 0.5% (beta, Q) or <= 0.1 day (change time)",
+  "direct_integrator_agreement": [
+    {
+      "case": "Model A MLE",
+      "lsoda_nll": 116.6214734966243,
+      "rk4_nll_by_step": {
+        "0.2": 116.62147648890809,
+        "0.1": 116.6214764893687,
+        "0.05": 116.62147648939764,
+        "0.025": 116.62147648939855
+      },
+      "rk4_minus_lsoda_at_h0p1": 2.9927443989663516e-06,
+      "rk4_step_change_h0p1_to_h0p025": -2.984279490192421e-11
+    },
+    {
+      "case": "Model B MLE (Q=1e7)",
+      "lsoda_nll": 75.21449203196275,
+      "rk4_nll_by_step": {
+        "0.2": 75.2144925668334,
+        "0.1": 75.21449255058958,
+        "0.05": 75.21449254959307,
+        "0.025": 75.21449254953149
+      },
+      "rk4_minus_lsoda_at_h0p1": 5.186268339230082e-07,
+      "rk4_step_change_h0p1_to_h0p025": 1.0580976095297956e-09
+    },
+    {
+      "case": "Model B, Q=inf",
+      "lsoda_nll": 75.2140604037417,
+      "rk4_nll_by_step": {
+        "0.2": 75.21406075642044,
+        "0.1": 75.21406074020526,
+        "0.05": 75.21406073921018,
+        "0.025": 75.21406073914905
+      },
+      "rk4_minus_lsoda_at_h0p1": 3.364635574598651e-07,
+      "rk4_step_change_h0p1_to_h0p025": 1.0562075658526737e-09
+    },
+    {
+      "case": "Model B, tau=47.7",
+      "lsoda_nll": 145.43547765302384,
+      "rk4_nll_by_step": {
+        "0.2": 145.43548073916676,
+        "0.1": 145.4354806680147,
+        "0.05": 145.43548066357118,
+        "0.025": 145.4354806632956
+      },
+      "rk4_minus_lsoda_at_h0p1": 3.014990852534538e-06,
+      "rk4_step_change_h0p1_to_h0p025": 4.719083790405421e-09
+    }
+  ],
+  "references": {
+    "A": 116.62147628537024,
+    "B_tau56": 75.2140550955582,
+    "B_tau_free": 74.83559484504936,
+    "script03_or_04": {
+      "A": 116.6214734966243,
+      "B_tau56": 75.21405462663445,
+      "B_tau_free": 74.83559407007779
+    }
+  },
+  "endpoints": [
+    {
+      "profile": "A: Q",
+      "side": "lower",
+      "endpoint": 827.9561081545462,
+      "rk4_delta_nll": 1.9164198888639135,
+      "threshold": 1.920729410347062,
+      "implied_shift": "-0.017 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "A: Q",
+      "side": "upper",
+      "endpoint": 1044.010209250329,
+      "rk4_delta_nll": 1.9182517625525435,
+      "threshold": 1.920729410347062,
+      "implied_shift": "+0.007 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "A: beta0",
+      "side": "lower",
+      "endpoint": 0.2211782097018749,
+      "rk4_delta_nll": 1.9108494860058727,
+      "threshold": 1.920729410347062,
+      "implied_shift": "-0.018 %",
+      "pass_": true,
+      "winner": "warm",
+      "cold_starts_gap": 1.4210854715202004e-14
+    },
+    {
+      "profile": "A: beta0",
+      "side": "upper",
+      "endpoint": 0.25050218803068874,
+      "rk4_delta_nll": 1.906379141070957,
+      "threshold": 1.920729410347062,
+      "implied_shift": "+0.022 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "B: Q",
+      "side": "lower",
+      "endpoint": 3304.657929821717,
+      "rk4_delta_nll": 1.9206716859854538,
+      "threshold": 1.920729410347062,
+      "implied_shift": "-0.002 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "B: beta_before",
+      "side": "lower",
+      "endpoint": 0.2857380800979378,
+      "rk4_delta_nll": 1.9169185956150017,
+      "threshold": 1.920729410347062,
+      "implied_shift": "-0.011 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "B: beta_before",
+      "side": "upper",
+      "endpoint": 0.35933298077791226,
+      "rk4_delta_nll": 1.917275200533794,
+      "threshold": 1.920729410347062,
+      "implied_shift": "+0.010 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "B: beta_after",
+      "side": "lower",
+      "endpoint": 0.10672873309515324,
+      "rk4_delta_nll": 1.9011508887861055,
+      "threshold": 1.920729410347062,
+      "implied_shift": "-0.029 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "B: beta_after",
+      "side": "upper",
+      "endpoint": 0.13002217814739989,
+      "rk4_delta_nll": 1.9199601105533333,
+      "threshold": 1.920729410347062,
+      "implied_shift": "+0.004 %",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    },
+    {
+      "profile": "B: change time",
+      "side": "lower",
+      "endpoint": 47.713364588221594,
+      "rk4_delta_nll": 1.912900588063252,
+      "threshold": 1.920729410347062,
+      "implied_shift": "-0.0079 days",
+      "pass_": true,
+      "winner": "warm",
+      "cold_starts_gap": 1.4210854715202004e-14
+    },
+    {
+      "profile": "B: change time",
+      "side": "upper",
+      "endpoint": 58.199525831667174,
+      "rk4_delta_nll": 1.9137955283613906,
+      "threshold": 1.920729410347062,
+      "implied_shift": "+0.0076 days",
+      "pass_": true,
+      "winner": "cold",
+      "cold_starts_gap": 0.0
+    }
+  ],
+  "all_pass": true,
+  "runtime_seconds": 116.8149106502533
+}

@@ -1,0 +1,176 @@
+{
+  "files": {
+    ".gitignore": {
+      "sha256": "2935b0fdeace582ae053603bf58e4701b3cc66fe19c447be4ba73f3c3481eadf",
+      "bytes": 192
+    },
+    "CITATION.cff": {
+      "sha256": "ebba5831c58de04ce71a0d5cffd017755fa49707871867e026cd1fa52dc3eb99",
+      "bytes": 1042
+    },
+    "LICENSE": {
+      "sha256": "c3dcfc88a2a3a1112717f42893fa31de92f65c97a3ca4f33cfcf7daf2ae3cdef",
+      "bytes": 1293
+    },
+    "PARAMETERS_AND_HANDOVER.md": {
+      "sha256": "3542e347af1b0ba49a578c2660624dd373841113cb7a8a2d86d6c91613a50d1c",
+      "bytes": 7770
+    },
+    "PROFILE_LIKELIHOOD_FINDINGS.md": {
+      "sha256": "1918216a9a84a6f2b1cb00d6038ddb39c8da07e39a9072332e407cac2950c32d",
+      "bytes": 9357
+    },
+    "README.md": {
+      "sha256": "4b81c6a10f12e369be0a996e4e236bfdb4923f1f513a84467d2817c29127506c",
+      "bytes": 6202
+    },
+    "START_HERE.md": {
+      "sha256": "b8fb5494bada93b0058f61c0a96cc12135d3fc5e2953ffbb7961d2603df0bc23",
+      "bytes": 990
+    },
+    "analysis/00_observed_early_growth.py": {
+      "sha256": "25353a9e9d3295f0a4c90555c1907a526fe99bd279d157af838ceacfc1ee023a",
+      "bytes": 2103
+    },
+    "analysis/01_seir_model_comparison.py": {
+      "sha256": "0510e254cb8973d97c15b2d83a965cc685810c0f972ad7e50c67509efadfb730",
+      "bytes": 7622
+    },
+    "analysis/02_biological_timing_sensitivity.py": {
+      "sha256": "74ac3f926db2094df2fe2ccade7623a0ef948caeda3e53628b8f108156e29d1e",
+      "bytes": 7391
+    },
+    "analysis/03_profile_likelihood.py": {
+      "sha256": "252952f51c0a0884b72f40f8b66a3f1d8913c6b43ea05421b1e84b6ff96a3863",
+      "bytes": 24132
+    },
+    "analysis/04_verify_endpoints.py": {
+      "sha256": "29ddda5aec80bdf1117cd5248b6266fdf5aedd36ca1e3b89a57b371e8fa0c5b5",
+      "bytes": 11984
+    },
+    "analysis/05_rk4_crosscheck.py": {
+      "sha256": "1ff35ef75d5412218453002bc9199749dc9ffecfcd573a8f9bab83969cc75ec7",
+      "bytes": 11679
+    },
+    "analysis/06_mechanism_analysis.py": {
+      "sha256": "5cd76de02e41c5265f12e0b93fe7020bb65c708159a97617a1a37eb5c1db1edb",
+      "bytes": 11539
+    },
+    "data/observed_weekly_cases_with_missingness.csv": {
+      "sha256": "1eb5697305648294de4e702683553154ac7d019245f61d4bb0fb86ba80fe97e1",
+      "bytes": 6113
+    },
+    "data/ukhsa_west_midlands_measles_weekly_raw.csv": {
+      "sha256": "6b527433f14fde4c7fac388cc459703ee2fe410abc95fbcecec0573ee95593a8",
+      "bytes": 26393
+    },
+    "docs/CHANGELOG.md": {
+      "sha256": "0d1078238642697e809d0422a90b6ac14b22c577b2d6deccd03ba66a909bed5b",
+      "bytes": 4146
+    },
+    "docs/DATA_SOURCES.md": {
+      "sha256": "884f9037dc9166749a1611791825ced4c1ef88ee8768a911490ff1fbd43a959d",
+      "bytes": 2788
+    },
+    "docs/REPRODUCIBILITY.md": {
+      "sha256": "22b51a0102d2e5fd5ce61a6b4030b8734eeb8484ba39a6f0992744be79785fdb",
+      "bytes": 6917
+    },
+    "figures/growth_window_sensitivity.png": {
+      "sha256": "9f846eae9bcfebe792a9892297d33743f40bfaae48557add8bad3ecdccf015a2",
+      "bytes": 58236
+    },
+    "figures/mechanism_depletion_vs_transmission.png": {
+      "sha256": "dbfebfedde6031775987b9b0f3da5deaf152d0009431bbfca9109a3a4d261ea5",
+      "bytes": 344695
+    },
+    "figures/observed_early_outbreak.png": {
+      "sha256": "54cb04733b6dd6cc4abaac1e1cf1a7b322a8f1251667930dc382a297755feda4",
+      "bytes": 116248
+    },
+    "figures/observed_vs_models.png": {
+      "sha256": "4e114fecd94079682dd518f1d455b8ad5f8d306be169e1787c42db18e3e9f951",
+      "bytes": 149921
+    },
+    "figures/profile_likelihood.png": {
+      "sha256": "46a3a97ed6c9a83ab07272cefd20c7998c5f21b6c89433e9441f56cc109fe30b",
+      "bytes": 423721
+    },
+    "figures/residual_comparison.png": {
+      "sha256": "a17474ae1481dcc8da65cf241bcae680b570102afbd64d1c609d9d55d3d6a146",
+      "bytes": 108963
+    },
+    "figures/timing_sensitivity_fits.png": {
+      "sha256": "f462014e26b37e91ed0a4774ec5cd3b6f3ad71e1fd628b6db2ff6fec024001c2",
+      "bytes": 147208
+    },
+    "figures/timing_sensitivity_rmse.png": {
+      "sha256": "bf8cf69149738dd7c6da48e9e33350fafbe5372fb271e2722fd4e3a1feeeb28e",
+      "bytes": 44488
+    },
+    "figures/weekly_2023_2024.png": {
+      "sha256": "c3f09ada009b97edc86134359bd96a66d40aa97944fd742669a5314c12293250",
+      "bytes": 83925
+    },
+    "report/west_midlands_measles_research_report.md": {
+      "sha256": "03c17808daf9292834976fe30bfbfefb77c8f59780e4499cdfa98180449ac75a",
+      "bytes": 44818
+    },
+    "report/west_midlands_measles_research_report.pdf": {
+      "sha256": "cef2ce9216b9bf46ccce6a5dc02fac43bd3ce66f5340126794d78443ed109eab",
+      "bytes": 1297536
+    },
+    "requirements.txt": {
+      "sha256": "25d122db0c2a49b8352e615321afe79548882af795fd294fb9967cf96c210590",
+      "bytes": 85
+    },
+    "results/endpoint_verification.json": {
+      "sha256": "b8edf9d0a7d5b48db960fd01b1c28aef777d67fbc669384626e7205521c6694b",
+      "bytes": 6110
+    },
+    "results/endpoint_verification_points.csv": {
+      "sha256": "404fce422edf044daefd77dc66e3feff849f0d34fcf6b71b3d558e1a6aa3cb57",
+      "bytes": 3033
+    },
+    "results/growth_window_estimates.csv": {
+      "sha256": "c0d8f547985952c2134f15c83814ac9825f6bb8f65a4733cd13c09c25fb8aa9b",
+      "bytes": 818
+    },
+    "results/mechanism_summary.json": {
+      "sha256": "d00b9739aff4e84803d1c87a8abe1223ddcc5c3858a869eef51e09e24686fbeb",
+      "bytes": 4335
+    },
+    "results/model_comparison.csv": {
+      "sha256": "f4ea79f394773d945c2d536d4e396fc93fd11045b46d96735fe9abdeb93a8390",
+      "bytes": 1555
+    },
+    "results/model_comparison_metrics.json": {
+      "sha256": "a29939999588b89037868983bded673042d92d328b6641411a95f7d934fc34ef",
+      "bytes": 4254
+    },
+    "results/model_comparison_predictions.csv": {
+      "sha256": "44527f3064ce57f3e933adf3f7f9caa187a5ef060eba74352dd7dfa3c3861c28",
+      "bytes": 2446
+    },
+    "results/profile_likelihood_profiles.csv": {
+      "sha256": "ab8ed601c82aa865161fcf1006fb9562a360232086c3443b7bcc9f6f0d6a62e5",
+      "bytes": 31428
+    },
+    "results/profile_likelihood_summary.json": {
+      "sha256": "3d1346c229a2d971f4d09f79aae4cf764adcf0879acc208b3e046b9a36fe6b27",
+      "bytes": 6939
+    },
+    "results/rk4_crosscheck.json": {
+      "sha256": "7ab4cf0eafc27ebde20b059370514d700b38507a76676fe569c536a1e1883001",
+      "bytes": 5479
+    },
+    "results/timing_sensitivity_predictions.csv": {
+      "sha256": "4a6384dff78a763dfb5f381b6b053e95357ce4aa498267faf74a990b6f6f35a1",
+      "bytes": 4541
+    },
+    "results/timing_sensitivity_results.csv": {
+      "sha256": "79ecf003abb3875565f4ce8f5d325939713d2fa38c92eca8ccba05c5fac8d991",
+      "bytes": 2303
+    }
+  }
+}

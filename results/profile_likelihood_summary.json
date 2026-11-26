@@ -1,0 +1,259 @@
+{
+  "likelihood": "independent Poisson, weekly integrated sigma*E in detected units",
+  "fixed": {
+    "sigma_per_day": 0.1,
+    "gamma_per_day": 0.14285714285714285
+  },
+  "search_box": {
+    "beta_per_day": [
+      0.03,
+      2.0
+    ],
+    "Q": [
+      30,
+      10000000.0
+    ],
+    "J0": [
+      0.01,
+      1000
+    ]
+  },
+  "lr_threshold_nll": 1.920729410347062,
+  "profiles": {
+    "A: Q": {
+      "model": "A",
+      "parameter": "Q",
+      "profile_minimum_at": 925.0691262228762,
+      "nll_min_used": 116.6214734966243,
+      "interval_95_LR": [
+        827.868380858508,
+        1044.0919854107733
+      ],
+      "interval_status": [
+        "found",
+        "found"
+      ],
+      "interval_95_quasi_phi": [
+        728.487906960566,
+        1243.2796144386775
+      ],
+      "interval_quasi_status": [
+        "found",
+        "found"
+      ],
+      "classification": "practically identifiable",
+      "nuisance_parameters_hitting_bounds_anywhere": [],
+      "max_sweep_disagreement": 1.1484253548132983e-07,
+      "all_points_success": true,
+      "max_proj_grad_norm": 0.013270994058170922,
+      "n_points": 14,
+      "seconds": 50.250492811203,
+      "Q_infinite_limit_delta_nll": 68.9546230957067,
+      "Q_infinite_within_LR_threshold": false
+    },
+    "A: beta0": {
+      "model": "A",
+      "parameter": "b0",
+      "profile_minimum_at": 0.2358456029807099,
+      "nll_min_used": 116.6214734966243,
+      "interval_95_LR": [
+        0.22114008560996437,
+        0.2505600723570152
+      ],
+      "interval_status": [
+        "found",
+        "found"
+      ],
+      "interval_95_quasi_phi": [
+        0.20301891316594586,
+        0.26868244550996356
+      ],
+      "interval_quasi_status": [
+        "found",
+        "found"
+      ],
+      "classification": "practically identifiable",
+      "nuisance_parameters_hitting_bounds_anywhere": [],
+      "max_sweep_disagreement": 1.145210887898429e-06,
+      "all_points_success": false,
+      "max_proj_grad_norm": 0.03645219737234298,
+      "n_points": 33,
+      "seconds": 150.61929368972778
+    },
+    "B: Q": {
+      "model": "B",
+      "parameter": "Q",
+      "profile_minimum_at": 10000000.000000006,
+      "nll_min_used": 75.21449203196275,
+      "interval_95_LR": [
+        3304.0198041234175,
+        10000000.000000006
+      ],
+      "interval_status": [
+        "found",
+        "not reached within search box"
+      ],
+      "interval_95_quasi_phi": [
+        2840.5374621926344,
+        10000000.000000006
+      ],
+      "interval_quasi_status": [
+        "found",
+        "not reached within search box"
+      ],
+      "classification": "not identifiable above (profile stays under threshold to the search-box limit)",
+      "nuisance_parameters_hitting_bounds_anywhere": [],
+      "max_sweep_disagreement": 2.303492863120482e-07,
+      "all_points_success": false,
+      "max_proj_grad_norm": 0.024944435940489892,
+      "n_points": 37,
+      "seconds": 1082.019199371338,
+      "Q_infinite_limit_delta_nll": -0.00043740532829872336,
+      "Q_infinite_within_LR_threshold": true
+    },
+    "B: beta_before": {
+      "model": "B",
+      "parameter": "b0",
+      "profile_minimum_at": 0.32012571140245577,
+      "nll_min_used": 75.21449203196275,
+      "interval_95_LR": [
+        0.28570547216636666,
+        0.3593735632048611
+      ],
+      "interval_status": [
+        "found",
+        "found"
+      ],
+      "interval_95_quasi_phi": [
+        0.28203452024753484,
+        0.36421567608019156
+      ],
+      "interval_quasi_status": [
+        "found",
+        "found"
+      ],
+      "classification": "practically identifiable",
+      "nuisance_parameters_hitting_bounds_anywhere": [
+        "Q"
+      ],
+      "max_sweep_disagreement": 7.282318250645403e-07,
+      "all_points_success": false,
+      "max_proj_grad_norm": 0.029555986797418193,
+      "n_points": 25,
+      "seconds": 528.1498312950134
+    },
+    "B: beta_after": {
+      "model": "B",
+      "parameter": "b1",
+      "profile_minimum_at": 0.1118507185804617,
+      "nll_min_used": 75.21449203196275,
+      "interval_95_LR": [
+        0.10670023690361885,
+        0.130031050419449
+      ],
+      "interval_status": [
+        "found",
+        "found"
+      ],
+      "interval_95_quasi_phi": [
+        0.10611247568381889,
+        0.13348184645320224
+      ],
+      "interval_quasi_status": [
+        "found",
+        "found"
+      ],
+      "classification": "practically identifiable",
+      "nuisance_parameters_hitting_bounds_anywhere": [
+        "Q"
+      ],
+      "max_sweep_disagreement": 2.5290496807883756e-07,
+      "all_points_success": false,
+      "max_proj_grad_norm": 0.025705344995314204,
+      "n_points": 26,
+      "seconds": 809.942280292511
+    },
+    "B: change time": {
+      "model": "B",
+      "parameter": "tau",
+      "profile_minimum_at": 54.0,
+      "nll_min_used": 74.86069583848501,
+      "interval_95_LR": [
+        47.67925547005081,
+        58.231884934119954
+      ],
+      "interval_status": [
+        "found",
+        "found"
+      ],
+      "interval_95_quasi_phi": [
+        47.240011645095024,
+        58.67455992365954
+      ],
+      "interval_quasi_status": [
+        "found",
+        "found"
+      ],
+      "classification": "practically identifiable",
+      "nuisance_parameters_hitting_bounds_anywhere": [
+        "Q"
+      ],
+      "max_sweep_disagreement": 2.980153169573896e-06,
+      "all_points_success": false,
+      "max_proj_grad_norm": 0.09094420845010559,
+      "n_points": 33,
+      "seconds": 1023.3234694004059,
+      "note": "Change-point likelihoods are non-regular; the set is an approximate likelihood-based set, not a calibrated confidence interval. tau in days from 6 Nov 2023 (day 0).",
+      "interval_95_LR_dates": [
+        "2023-12-23",
+        "2024-01-03"
+      ],
+      "profile_minimum_date": "2023-12-30"
+    }
+  },
+  "pearson_dispersion": {
+    "A": 4.887751241597332,
+    "B": 1.242053230696592
+  },
+  "mle": {
+    "A": {
+      "b0": 0.2358456029807099,
+      "Q": 925.0691262228762,
+      "J0": 6.464298273689268,
+      "nll": 116.6214734966243
+    },
+    "B_tau56": {
+      "b0": 0.32012571140245577,
+      "b1": 0.1118507185804617,
+      "Q": 10000000.000000006,
+      "J0": 1.6092509257650331,
+      "nll": 75.21449203196275
+    },
+    "B_tau56_Q_infinite": {
+      "b0": 0.3201241582749709,
+      "b1": 0.11184564493951898,
+      "J0": 1.6092520159795418,
+      "nll": 75.21405462663445
+    },
+    "A_Q_infinite": {
+      "b0": 0.1394195651384772,
+      "J0": 26.459647373049464,
+      "nll": 185.576096592331
+    }
+  },
+  "global_minimum_check": {
+    "A/tau-fixed": {
+      "mle_nll": 116.6214734966243,
+      "lowest_profile_nll": 116.6214734966243
+    },
+    "B/tau-fixed": {
+      "mle_nll": 75.21449203196275,
+      "lowest_profile_nll": 75.21449203196275
+    },
+    "B/tau-free": {
+      "mle_nll": null,
+      "lowest_profile_nll": 74.86069583848501
+    }
+  },
+  "runtime_seconds": 3015.610339641571
+}

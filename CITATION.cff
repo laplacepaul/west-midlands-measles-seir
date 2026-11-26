@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Change-point transmission and parameter identifiability in an SEIR model of the 2023–2024 West Midlands measles outbreak"
+type: software
+authors:
+  - family-names: Adeyemi
+    given-names: Paul
+version: "1.0.0"
+date-released: "2026-11-26"
+repository-code: "https://github.com/laplacepaul/west-midlands-measles-seir"
+license: MIT
+keywords:
+  - mathematical epidemiology
+  - SEIR model
+  - measles
+  - parameter identifiability
+  - profile likelihood
+  - change-point model
+  - mathematical biology
+abstract: >-
+  Retrospective SEIR modelling of the 2023–2024 West Midlands measles outbreak
+  using UKHSA onset-week surveillance data. Compares constant and one-change
+  transmission specifications, separates structural from practical
+  identifiability with independently verified profile likelihoods, and shows
+  that the two specifications reproduce the epidemic turnover by different
+  mechanisms (susceptible depletion versus a fall in transmission).
